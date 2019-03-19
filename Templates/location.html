@@ -1,0 +1,107 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Real Time Weather Widget A Flat Responsive widget Template :: w3layouts</title>
+<!-- For-Mobile-Apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Real Time Weather Widget Responsive, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, Flat Web Templates, Login Sign-up Responsive Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //For-Mobile-Apps -->
+<!-- Style -->
+<link rel="stylesheet" href="static/css/style.css" type="text/css" media="all" />
+<!-- Style -->
+<!-- JavaScript -->
+<script type="text/javascript" src="static/js/jquery.min.js"></script>
+<!-- Javascript -->
+
+<script>
+    function startTime() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById('txt').innerHTML =
+        h + ":" + m + ":" + s;
+        var t = setTimeout(startTime, 500);
+    }
+    function checkTime(i) {
+        if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+        return i;
+    }
+</script>
+
+</head>
+<body onload="startTime()">
+
+<h1>REAL TIME WEATHER WIDGET</h1>
+
+<!--<div style = "position: absolute; left: 30%; top: 30%; font-size: 25px;text-align: center;">
+    <form action = "http://localhost:5000" method = "GET">
+        <p>
+            Enter City: <input type="text" name = "city" style = "position: absolute; left: 120%; top: 0%; font-size: 20px; width: 200%; font-family: Oswald-Light">
+            <input type="submit" style = "position: absolute; top: 0%; left: 500%; font-size: 20px;">
+        </p>
+    </form>
+</div>-->
+
+<div class="container">
+
+    <div class="city">
+        {{ city }}
+    </div>
+
+    <div class="content">
+
+        <p></p>
+        <div class="place">
+
+            <div id="txt"><p></p> </div>
+
+            <div class="dmy">
+                <script type="text/javascript">
+                   var mydate=new Date()
+                   var year=mydate.getYear()
+                   if(year<1000)
+                     year+=1900
+                     var day=mydate.getDay()
+                     var month=mydate.getMonth()
+                     var daym=mydate.getDate()
+                   if(daym<10)
+                     daym="0"+daym
+                     var dayarray=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
+                     var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
+                     document.write(""+dayarray[day]+", "+montharray[month]+" "+daym+", "+year+"")
+                </script>
+                <i id="des"><b>{{ description }}</b></i>
+            </div>
+
+        </div>
+
+
+        <div class="temp">
+            <img src={{ icon }} alt="" style = "position: absolute; left: 56.5%;top: 50%;" height="100px" width = "100px">
+            <p> {{ temperature }}°C </p>
+        </div>
+
+        <div class="clear"></div>
+
+    </div>
+
+</div>
+
+<div class="footer">
+     <p>Copyright &copy; 2015 Real Time Weather Widget. All Rights Reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,419 @@
+/*--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+--*/
+
+/*-- Reset Code --*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+/* start editing from here */
+a{text-decoration:none;}
+.txt-rt{text-align:right;}/* text align right */
+.txt-lt{text-align:left;}/* text align left */
+.txt-center{text-align:center;}/* text align center */
+.float-rt{float:right;}/* float right */
+.float-lt{float:left;}/* float left */
+.clear{clear:both;}/* clear float */
+.pos-relative{position:relative;}/* Position Relative */
+.pos-absolute{position:absolute;}/* Position Absolute */
+.vertical-base{	vertical-align:baseline;}/* vertical align baseline */
+.vertical-top{	vertical-align:top;}/* vertical align top */
+.underline{	padding-bottom:5px;	border-bottom: 1px solid #eee; margin:0 0 20px 0;}/* Add 5px bottom padding and a underline */
+nav.vertical ul li{	display:block;}/* vertical menu */
+nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
+img{max-width:100%;}
+/*img[width],img[height]{width:auto;height:auto;} wordpress hack to reset the attributes (while making responsive) */
+/*-- Reset Code --*/
+
+/*-- Fonts --*/
+@font-face{
+  font-family: 'Oswald-Light';
+  src:url(../fonts/Oswald-Light.ttf) format('truetype');
+}
+@font-face{
+  font-family: 'Gotham-Book';
+  src:url(../fonts/Gotham-Book.ttf) format('truetype');
+}
+/*-- Fonts --*/
+
+/*-- Index - Page - styling --*/
+
+body {
+	background: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Oswald-Light';
+}
+
+.clear {
+  clear: both;
+}
+
+h1 {
+    text-align: center;
+    font-size: 38px;
+    margin: 50px 0;
+}
+  
+.container {
+    width: 35%;
+    margin: 0 auto;
+}
+
+.city {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #EEE;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.place {
+    width: 50%;
+    float: left;
+    text-align: center;
+    height: 225px;
+    background-color: rgba(255, 255, 255, 0.54);
+}
+
+div#txt {
+    font-size: 45px;
+    margin: 35px 0;
+    font-family: Gotham-Book;
+}
+
+.dmy {
+    font-size: 25px;
+}
+
+.temp {
+    width: 50%;
+    float: left;
+    background: rgba(169, 169, 169, 0.26)no-repeat 85px 20px;
+    text-align: center;
+    height: 225px;
+}
+
+.temp p {
+    font-size: 75px;
+    margin-top: 100px;
+    color: #EEE;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 200px;
+}
+.footer p {
+    color: #FFF;
+}
+.footer a {
+    color: #FFF;
+    text-decoration: none;
+}
+.footer a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+/*-- Index - Page - styling --*/
+
+/*-- Responsive - Code --*/
+
+@media screen and (max-width: 1920px) {
+    h1 {
+        font-size: 50px;
+        margin: 100px 0;
+    }
+    .container {
+        width: 40%;
+    }
+    .city {
+        font-size: 25px;
+    }
+    .place {
+        height: 300px;
+    }
+    div#txt {
+        font-size: 50px;
+        margin: 65px 0px;
+    }
+    .dmy {
+        font-size: 30px;
+    }
+    .temp {
+        height: 300px;
+        background: rgba(169, 169, 169, 0.26) no-repeat 165px 50px;
+    }
+    .temp p {
+        font-size: 90px;
+        margin-top: 130px;
+    }
+}
+
+@media screen and (max-width: 1680px) {
+    .temp {
+        background: rgba(169, 169, 169, 0.26)  no-repeat 145px 50px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .temp {
+        background: rgba(169, 169, 169, 0.26)  no-repeat 135px 50px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    h1 {
+        margin: 75px 0px;
+    }
+    .temp {
+        background: rgba(169, 169, 169, 0.26)  no-repeat 120px 50px;
+    }
+    .footer {
+        margin-top: 150px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    h1 {
+        margin: 40px 0px;
+    }
+    .temp {
+        background: rgba(169, 169, 169, 0.26) no-repeat 113px 50px;
+    }
+    .footer {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .container {
+        width: 45%;
+    }
+    .temp {
+        background: rgba(169, 169, 169, 0.26)  no-repeat 120px 65px;
+    }
+    .temp p {
+        margin-top: 160px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 55%;
+    }
+    .temp {
+        background: rgba(169, 169, 169, 0.26) no-repeat 118px 65px;
+    }
+}
+
+@media screen and (max-width: 966px) {
+    .container {
+        width: 60%;
+    }
+    .footer {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 853px) {
+    h1 {
+        margin: 10px 0px;
+    }
+    .temp {
+        background: rgba(169, 169, 169, 0.26)  no-repeat 104px 65px;
+    }
+    .footer {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        width: 70%;
+    }
+    .temp {
+        background: rgba(169, 169, 169, 0.26) no-repeat 115px 65px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        margin: 40px 0px;
+    }
+    .temp {
+        background: rgba(169, 169, 169, 0.26) no-repeat 111px 65px;
+    }
+    .footer {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .container {
+        width: 75%;
+    }
+    .footer {
+        margin: 80px 0 20px;
+    }
+}
+
+@media screen and (max-width: 667px) {
+    h1 {
+        font-size: 45px;
+    }
+    .container {
+        width: 85%;
+    }
+    .footer {
+        margin: 80px 0 20px;
+    }
+}
+
+@media screen and (max-width: 603px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .footer {
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    h1 {
+        font-size: 45px;
+    }
+    .dmy {
+        font-size: 27px;
+    }
+    .temp {
+        background: rgba(169, 169, 169, 0.26)no-repeat 100px 65px;
+    }
+    .footer {
+        margin: 80px 0 20px;
+    }
+}
+
+@media screen and (max-width: 533px) {
+    .dmy {
+        font-size: 25px;
+    }
+    .temp {
+        background: rgba(169, 169, 169, 0.26) no-repeat 95px 65px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 40px;
+    }
+    .container {
+        width: 95%;
+    }
+    .temp {
+        background: rgba(169, 169, 169, 0.26) no-repeat 85px 50px;
+    }
+    .temp p {
+        margin-top: 150px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    h1 {
+        font-size: 35px;
+    }
+    .place {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .temp {
+        width: 100%;
+        background: rgba(169, 169, 169, 0.26)no-repeat 155px 65px;
+    }
+    .footer {
+        margin: 80px 0 20px;
+    }
+    .footer p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 384px) {
+    h1 {
+        font-size: 32px;
+    }
+    .temp {
+        background: rgba(169, 169, 169, 0.26) no-repeat 140px 50px;
+    }
+    .temp p {
+        margin-top: 140px;
+    }
+    .footer {
+        margin: 80px 0 20px;
+    }
+    .footer p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    h1 {
+        font-size: 30px;
+    }
+    .place {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .temp {
+        width: 100%;
+        background: rgba(169, 169, 169, 0.26) no-repeat 135px 50px;
+    }
+    .temp p {
+        margin-top: 140px;
+    }
+    .footer p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 28px;
+    }
+    .place {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .temp {
+        width: 100%;
+        background: rgba(169, 169, 169, 0.26) no-repeat 113px 50px;
+    }
+    .temp p {
+        margin-top: 140px;
+    }
+    .footer {
+        margin: 80px 0 20px;
+    }
+    .footer p {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+/*-- Responsive - Code --*/
