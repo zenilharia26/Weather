@@ -18,7 +18,7 @@ def city():
         temperature = req['main']['temp']
         icon = req['weather'][0]['icon']
         icon = 'https://openweathermap.org/img/w/'+ icon +'.png'
-
+	print('Weather')
         return render_template('city.html', city = city, description = description, temperature = temperature, icon = icon)
 if __name__ == '__main__':
    app.run()
