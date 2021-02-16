@@ -1,8 +1,10 @@
 
 import requests
 from flask import Flask, render_template, request
+import os
 app = Flask(__name__)
 app.debug = True
+API_KEY = os.environ.get('API_KEY')
 
 @app.route('/')
 def city():
@@ -11,7 +13,7 @@ def city():
         if city == None or city == '':
                 city = 'Mumbai'
 
-        req = requests.get('http://api.openweathermap.org/data/2.5/weather?q='+ city +'&units=metric&appid=271d1234d3f497eed5b1d80a07b3fcd1').json()
+        req = requests.get('http://api.openweathermap.org/data/2.5/weather?q='+ city +'&units=metric&appid='+API_KEY).json()
         print(req)
 
         description = req['weather'][0]['description'].upper()
