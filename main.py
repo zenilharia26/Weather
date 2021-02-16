@@ -3,7 +3,7 @@ import requests
 from flask import Flask, render_template, request
 import os
 app = Flask(__name__)
-app.debug = True
+app.debug = False
 API_KEY = os.environ.get('API_KEY')
 
 @app.route('/')
